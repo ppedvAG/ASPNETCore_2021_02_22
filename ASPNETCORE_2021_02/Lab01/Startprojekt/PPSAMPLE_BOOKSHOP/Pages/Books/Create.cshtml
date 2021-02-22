@@ -1,0 +1,55 @@
+﻿@page
+@model PPSAMPLE_BOOKSHOP.Pages.Club.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Erstelle</h1>
+
+<h4>Neues Buch</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            
+            <!-- Titel -->
+            <div class="form-group">
+                <!-- LABEL -->
+                <label asp-for="NewBook.Title" class="control-label"></label>
+                <!-- TEXTBOX -->
+                <input asp-for="NewBook.Title" class="form-control" />
+
+                <!--INFO-FENSTER WENN VALIDIERUNG ANSPRINGT -->
+                <span asp-validation-for="NewBook.Title" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="NewBook.Author" class="control-label"></label>
+                <input asp-for="NewBook.Author" class="form-control" />
+                <span asp-validation-for="NewBook.Author" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NewBook.Price" class="control-label"></label>
+                <input asp-for="NewBook.Price" class="form-control" />
+                <span asp-validation-for="NewBook.Price" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

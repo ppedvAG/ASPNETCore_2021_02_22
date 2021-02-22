@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,8 +9,10 @@ namespace PPSAMPLE_BOOKSHOP.Models
 {
     public class Book
     {
+        public int ID { get; set; }
         [Required]
         [MaxLength(30)]
+        [DisplayName("Titel")]
         public string Title { get; set; }
 
         [Required]
@@ -18,9 +21,11 @@ namespace PPSAMPLE_BOOKSHOP.Models
 
         [Required]
         [Range(0, 10000)]
+        [DisplayName("Preis")]
         public decimal Price { get; set; }
 
         [Required]
+        [DisplayName("Hörbuch")]
         public bool AudioBook { get; set; } = false;
     }
 }

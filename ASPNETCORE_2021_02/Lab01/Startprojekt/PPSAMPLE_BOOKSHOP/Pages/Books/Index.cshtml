@@ -1,0 +1,64 @@
+﻿@page "{handler?}"
+@model PPSAMPLE_BOOKSHOP.Pages.Books.IndexModel
+@{
+}
+
+<form method="post">
+    <p>Suchbegriff</p>
+    <input id="query" type="text" asp-for="Query" />
+
+    <p>Nur Hörbucher anzeigen?</p>
+    <input type="checkbox" asp-for="IsAudioBook" />
+    <button asp-page-handler="search" type="submit">Search</button>
+</form>
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShowingBooks[0].ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShowingBooks[0].Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShowingBooks[0].Author)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShowingBooks[0].Price)
+                </th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ShowingBooks)
+            {
+                
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Author)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        <a asp-page="" asp-page-handler="Details" asp-route-id="@item.ID">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+
+
+
+
+
+

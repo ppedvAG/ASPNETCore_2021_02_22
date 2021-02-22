@@ -8,8 +8,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Books\" />
-  </ItemGroup>
-
 </Project>
