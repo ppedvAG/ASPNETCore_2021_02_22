@@ -1,0 +1,17 @@
+﻿@page "{handler?}"
+@model RazorPagesBasics.Pages.Modul001.Calc3Model
+@{
+}
+
+<h1>Erste Taschenrechner Implementierung</h1>
+
+<form method="post">
+    <input name="eins" /><br />
+    <input name="zwei" /><br />
+
+    <button type="submit" asp-page-handler="plus">+</button>
+    <button type="submit" asp-page-handler="minus">-</button>
+
+    @Model.Ergebnis
+
+</form>

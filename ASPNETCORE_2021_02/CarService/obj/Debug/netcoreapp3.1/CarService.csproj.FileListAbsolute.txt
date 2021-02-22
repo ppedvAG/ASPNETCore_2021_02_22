@@ -1,0 +1,8 @@
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\netcoreapp3.1\CarService.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\netcoreapp3.1\CarService.AssemblyInfo.cs
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\netcoreapp3.1\CarService.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\bin\Debug\netcoreapp3.1\CarService.deps.json
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\bin\Debug\netcoreapp3.1\CarService.dll
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\bin\Debug\netcoreapp3.1\CarService.pdb
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\netcoreapp3.1\CarService.dll
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\netcoreapp3.1\CarService.pdb

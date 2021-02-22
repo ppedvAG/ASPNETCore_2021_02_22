@@ -1,0 +1,16 @@
+﻿@page "{handler?}"
+@model RazorPagesBasics.Pages.Modul001.Calc2Model
+@{
+}
+
+
+<h1>Erste Taschenrechner Implementierung</h1>
+
+<form method="post">
+    <input name="eins" /><br />
+    <input name="zwei" /><br />
+    <button type="submit">Add</button>
+
+    @Model.Ergebnis
+   
+</form>
