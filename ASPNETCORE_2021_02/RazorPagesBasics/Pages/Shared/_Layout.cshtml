@@ -24,22 +24,34 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
+    </header> <!-- Menüleiste -->
+    
+    
     <div class="container">
-        <main role="main" class="pb-3">
+        @*<main role="main" class="pb-3">
             @RenderBody()
-        </main>
+        </main>*@
+
+        <div class="col-md-9">
+            @RenderBody()
+        </div>
+        <div class="col-md-3">
+            @await Component.InvokeAsync("Users")
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2021 - RazorPagesBasics - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

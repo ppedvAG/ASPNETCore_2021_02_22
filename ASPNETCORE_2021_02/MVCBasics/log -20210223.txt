@@ -1,0 +1,97 @@
+2021-02-23 09:55:51.822 +01:00 [INF] Starting web host
+2021-02-23 09:55:58.303 +01:00 [INF] User profile is available. Using 'C:\Users\kw4\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-02-23 09:55:58.812 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-23 09:55:58.813 +01:00 [INF] Hosting environment: Development
+2021-02-23 09:55:58.814 +01:00 [INF] Content root path: C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics
+2021-02-23 09:55:58.957 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/ - -
+2021-02-23 09:55:59.095 +01:00 [INF] Executing endpoint 'MVCBasics.Controllers.HomeController.Index (MVCBasics)'
+2021-02-23 09:55:59.256 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVCBasics.Controllers.HomeController (MVCBasics).
+2021-02-23 09:55:59.263 +01:00 [INF] Hallo voin HomeController!!!!!!!!!!!!!!!!!!!!!!!!!
+2021-02-23 09:55:59.490 +01:00 [INF] Executing action method MVCBasics.Controllers.HomeController.Index (MVCBasics) - Validation state: "Valid"
+2021-02-23 09:55:59.513 +01:00 [INF] Executed action method MVCBasics.Controllers.HomeController.Index (MVCBasics), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.6885ms.
+2021-02-23 09:55:59.566 +01:00 [INF] Executing ViewResult, running view Index.
+2021-02-23 09:55:59.893 +01:00 [INF] Executed ViewResult - view Index executed in 341.1105ms.
+2021-02-23 09:55:59.895 +01:00 [INF] Executed action MVCBasics.Controllers.HomeController.Index (MVCBasics) in 637.4138ms
+2021-02-23 09:55:59.897 +01:00 [INF] Executed endpoint 'MVCBasics.Controllers.HomeController.Index (MVCBasics)'
+2021-02-23 09:55:59.943 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/ - - - 200 - text/html;+charset=utf-8 993.6231ms
+2021-02-23 09:55:59.979 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/css/site.css - -
+2021-02-23 09:55:59.979 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/jquery/dist/jquery.min.js - -
+2021-02-23 09:55:59.979 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-02-23 09:56:00.006 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-02-23 09:56:00.036 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-02-23 09:56:00.142 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\css\site.css'
+2021-02-23 09:56:00.148 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/css/site.css - - - 200 1417 text/css 166.3843ms
+2021-02-23 09:56:00.149 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\js\site.js'
+2021-02-23 09:56:00.183 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 172.2857ms
+2021-02-23 09:56:00.193 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\jquery\dist\jquery.min.js'
+2021-02-23 09:56:00.193 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2021-02-23 09:56:00.195 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-02-23 09:56:00.200 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 218.0343ms
+2021-02-23 09:56:00.211 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 232.1791ms
+2021-02-23 09:56:00.212 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 233.2460ms
+2021-02-23 10:55:58.440 +01:00 [INF] Starting web host
+2021-02-23 10:56:02.852 +01:00 [INF] User profile is available. Using 'C:\Users\kw4\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-02-23 10:56:03.446 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-23 10:56:03.446 +01:00 [INF] Hosting environment: Development
+2021-02-23 10:56:03.446 +01:00 [INF] Content root path: C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics
+2021-02-23 10:56:03.572 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/ - -
+2021-02-23 10:56:03.662 +01:00 [INF] Executing endpoint 'MVCBasics.Controllers.HomeController.Index (MVCBasics)'
+2021-02-23 10:56:03.781 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MVCBasics.Controllers.HomeController (MVCBasics).
+2021-02-23 10:56:03.787 +01:00 [INF] Hallo voin HomeController!!!!!!!!!!!!!!!!!!!!!!!!!
+2021-02-23 10:56:04.005 +01:00 [INF] Executing action method MVCBasics.Controllers.HomeController.Index (MVCBasics) - Validation state: "Valid"
+2021-02-23 10:56:04.030 +01:00 [INF] Executed action method MVCBasics.Controllers.HomeController.Index (MVCBasics), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8402ms.
+2021-02-23 10:56:04.099 +01:00 [INF] Executing ViewResult, running view Index.
+2021-02-23 10:56:04.486 +01:00 [INF] Executed ViewResult - view Index executed in 406.8534ms.
+2021-02-23 10:56:04.488 +01:00 [INF] Executed action MVCBasics.Controllers.HomeController.Index (MVCBasics) in 706.1238ms
+2021-02-23 10:56:04.490 +01:00 [INF] Executed endpoint 'MVCBasics.Controllers.HomeController.Index (MVCBasics)'
+2021-02-23 10:56:04.551 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/ - - - 200 - text/html;+charset=utf-8 985.4352ms
+2021-02-23 10:56:04.596 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-02-23 10:56:04.596 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-02-23 10:56:04.597 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/jquery/dist/jquery.min.js - -
+2021-02-23 10:56:04.597 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-02-23 10:56:04.597 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/css/site.css - -
+2021-02-23 10:56:04.749 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\css\site.css'
+2021-02-23 10:56:04.749 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\js\site.js'
+2021-02-23 10:56:04.764 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 160.4521ms
+2021-02-23 10:56:04.803 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/css/site.css - - - 200 1417 text/css 206.6210ms
+2021-02-23 10:56:04.846 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\jquery\dist\jquery.min.js'
+2021-02-23 10:56:04.846 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2021-02-23 10:56:04.846 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-02-23 10:56:04.859 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 262.7038ms
+2021-02-23 10:56:04.861 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 264.5868ms
+2021-02-23 10:56:04.881 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 284.1027ms
+2021-02-23 10:56:35.155 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/Person/Edit - -
+2021-02-23 10:56:35.169 +01:00 [INF] Executing endpoint 'MVCBasics.Controllers.PersonController.Edit (MVCBasics)'
+2021-02-23 10:56:35.182 +01:00 [INF] Route matched with {action = "Edit", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Edit() on controller MVCBasics.Controllers.PersonController (MVCBasics).
+2021-02-23 10:56:35.210 +01:00 [INF] Executing action method MVCBasics.Controllers.PersonController.Edit (MVCBasics) - Validation state: "Valid"
+2021-02-23 10:56:35.211 +01:00 [INF] Executed action method MVCBasics.Controllers.PersonController.Edit (MVCBasics), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3197ms.
+2021-02-23 10:56:35.223 +01:00 [INF] Executing ViewResult, running view Edit.
+2021-02-23 10:56:35.376 +01:00 [INF] Executed ViewResult - view Edit executed in 155.7319ms.
+2021-02-23 10:56:35.395 +01:00 [INF] Executed action MVCBasics.Controllers.PersonController.Edit (MVCBasics) in 212.4877ms
+2021-02-23 10:56:35.395 +01:00 [INF] Executed endpoint 'MVCBasics.Controllers.PersonController.Edit (MVCBasics)'
+2021-02-23 10:56:35.396 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/Person/Edit - - - 200 - text/html;+charset=utf-8 240.9981ms
+2021-02-23 10:56:35.447 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-02-23 10:56:35.451 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-02-23 10:56:35.454 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-02-23 10:56:35.454 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/jquery/dist/jquery.min.js - -
+2021-02-23 10:56:35.454 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/css/site.css - -
+2021-02-23 10:56:35.488 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/jquery-validation/dist/jquery.validate.min.js - -
+2021-02-23 10:56:35.491 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\css\site.css'
+2021-02-23 10:56:35.520 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\js\site.js'
+2021-02-23 10:56:35.527 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/css/site.css - - - 200 1417 text/css 68.0291ms
+2021-02-23 10:56:35.527 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44353/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - -
+2021-02-23 10:56:35.580 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 128.8285ms
+2021-02-23 10:56:35.581 +01:00 [INF] Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js'
+2021-02-23 10:56:35.580 +01:00 [INF] Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js'
+2021-02-23 10:56:35.589 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 59.4237ms
+2021-02-23 10:56:35.617 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\jquery\dist\jquery.min.js'
+2021-02-23 10:56:35.617 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/jquery-validation/dist/jquery.validate.min.js - - - 200 23261 application/javascript 144.4988ms
+2021-02-23 10:56:35.617 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-02-23 10:56:35.620 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\MVCBasics\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2021-02-23 10:56:35.630 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 175.8534ms
+2021-02-23 10:56:35.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 171.5961ms
+2021-02-23 10:56:35.637 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44353/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 190.0138ms
+2021-02-23 10:56:56.399 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44353/Person/Edit application/x-www-form-urlencoded 222
+2021-02-23 10:56:56.404 +01:00 [INF] Executing endpoint 'MVCBasics.Controllers.PersonController.Edit (MVCBasics)'
+2021-02-23 10:56:56.447 +01:00 [INF] Route matched with {action = "Edit", controller = "Person"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Edit(MVCBasics.Models.Person) on controller MVCBasics.Controllers.PersonController (MVCBasics).
+2021-02-23 10:56:56.558 +01:00 [INF] Executing action method MVCBasics.Controllers.PersonController.Edit (MVCBasics) - Validation state: "Valid"

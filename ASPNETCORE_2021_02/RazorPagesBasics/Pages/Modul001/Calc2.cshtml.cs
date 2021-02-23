@@ -11,13 +11,18 @@ namespace RazorPagesBasics.Pages.Modul001
     {
         public int Ergebnis { get; set; }
 
-        public void OnGet()
+        public void OnGet(int year, int month, string name) //Get-Methode wird via QueryString
         {
-            Ergebnis = 0;
+
         }
 
+        //public void OnGet() //<-Standardeinstieg localhost:12345/Modul001/Calc2
+        //{
+        //    Ergebnis = 0;
+        //}
 
-        public void OnGetHannes()
+
+        public void OnGetHannes()//<-mit Handler localhost:12345/Modul001/Calc2?handler=Hannes
         {
             Ergebnis = 123;
         }

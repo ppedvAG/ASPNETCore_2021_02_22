@@ -1,0 +1,23 @@
+﻿@page
+@model RazorPagesBasics.Pages.Modul002.PartialViewSample3Model
+@{
+}
+
+<h1>jQuery Sample with PartialViews</h1>
+
+<p><button class="btn btn-primary" id="btnLoadDayList">Load</button></p>
+
+
+<div id="grid"></div>
+
+
+
+@section scripts{
+    <script>
+        $(function () {
+            $('#btnLoadDayList').on('click', function () {
+                $('#grid').load('/Modul002/PartialViewSample3?handler=Excel');
+            });
+        });
+    </script>
+}
