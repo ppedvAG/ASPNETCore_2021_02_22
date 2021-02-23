@@ -1,0 +1,11 @@
+﻿@page
+@model RazorPagesBasics.Pages.Modul005.CookieSampleModel
+@{
+}
+
+
+<form method="post">
+    <input type="text" asp-for="EmailAddress" />
+    <span asp-validation-for="EmailAddress"></span><br />
+    <button>Submit</button>
+</form>

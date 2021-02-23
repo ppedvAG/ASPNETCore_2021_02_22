@@ -5,6 +5,23 @@ using System.Threading.Tasks;
 
 namespace RazorPagesBasics.Models
 {
+
+    public interface IMyCar
+    {
+        string Brand { get; set; }
+        string Modell { get; set; }
+
+        DateTime ConstructionAt { get; set; }
+
+    }
+
+    public class MyCar : IMyCar
+    {
+        public string Brand { get; set; }
+        public string Modell { get; set; }
+
+        public DateTime ConstructionAt { get; set; }
+    }
     public class User
     {
         public int Id { get; set; }

@@ -2,13 +2,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RazorPagesBasics.Pages.Modul003;
 using RazorPagesBasics.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Westwind.AspNetCore.LiveReload;
 
 namespace RazorPagesBasics
 {
@@ -24,8 +24,37 @@ namespace RazorPagesBasics
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            //services.AddLiveReload(config =>
+            //{
+            //    // optional - use config instead
+            //    //config.LiveReloadEnabled = true;
+            //    //config.FolderToMonitor = Path.GetFullname(Path.Combine(Env.ContentRootPath,"..")) ;
+            //});
+
+
+            services.AddRazorPages()
+                //.AddRazorRuntimeCompilation()
+                .AddRazorPagesOptions(options => {
+                    //options.RootDirectory = "/Content"; //Anstatt Page-Verzeichnis, liegen die RazorPages im Verzeichnis Content 
+                    options.Conventions.AddPageRoute("/index", "{*url}");
+                    options.Conventions.AddPageRoute("/Modul004/BlogOverviewSample2", "Search/{year}/{month}/{day}/{title}");
+                    
+                });
+
+            //services.AddRazorPages().WithRazorPagesRoot("/Content"); //Weitere Variante -> //Anstatt Page-Verzeichnis, liegen die RazorPages im Verzeichnis Content 
+
             services.AddTransient<IUserService, UserService>();
+            
+            
+            services.AddSession(options =>
+            {
+                //https://docs.microsoft.com/de-de/aspnet/core/fundamentals/app-state?view=aspnetcore-5.0
+                options.IdleTimeout = TimeSpan.FromSeconds(10); //TimeOut
+                //options.Cookie.HttpOnly = true;
+                //options.Cookie.IsEssential = true;
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -34,6 +63,7 @@ namespace RazorPagesBasics
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                //app.UseLiveReload();
             }
             else
             {
@@ -45,9 +75,20 @@ namespace RazorPagesBasics
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseRouting();
+            
+            //gobaler Speicher - hier hinterlegen wir unseren Datenpfad zum Verzeichnis Images
+            AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
 
+
+
+            app.UseRouting();
+            app.UseSession();
             app.UseAuthorization();
+
+            app.MapWhen(context => context.Request.Path.ToString().Contains("imagegen"), subapp =>
+            {
+                subapp.UseThumbNailGen();
+            });
 
             app.UseEndpoints(endpoints =>
             {

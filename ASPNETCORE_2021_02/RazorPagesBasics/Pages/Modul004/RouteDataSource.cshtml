@@ -1,0 +1,14 @@
+﻿@page
+@model RazorPagesBasics.Pages.Modul004.RouteDataSourceModel
+@{
+}
+
+
+<form method="post">
+    <input name="eins" /><br />
+    <input name="zwei" /><br />
+    <button type="submit" asp-page-handler="plus">+</button>
+    <button type="submit" asp-page-handler="minus">-</button>
+
+    @Model.Ergebnis
+</form>
