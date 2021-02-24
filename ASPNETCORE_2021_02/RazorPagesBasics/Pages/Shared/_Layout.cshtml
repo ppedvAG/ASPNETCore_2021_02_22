@@ -27,6 +27,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+                        <partial name="_LoginPartial" />
                     </ul>
                 </div>
             </div>
@@ -35,16 +36,13 @@
     
     
     <div class="container">
-        @*<main role="main" class="pb-3">
-            @RenderBody()
-        </main>*@
 
         <div class="col-md-9">
             @RenderBody()
         </div>
-        @*<div class="col-md-3">
+        <div class="col-md-3">
             @await Component.InvokeAsync("Users")
-        </div>*@
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">

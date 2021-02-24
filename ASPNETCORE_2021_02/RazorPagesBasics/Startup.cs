@@ -31,14 +31,13 @@ namespace RazorPagesBasics
             //    //config.FolderToMonitor = Path.GetFullname(Path.Combine(Env.ContentRootPath,"..")) ;
             //});
 
+            //.AddRazorRuntimeCompilation()
 
             services.AddRazorPages()
-                //.AddRazorRuntimeCompilation()
                 .AddRazorPagesOptions(options => {
                     //options.RootDirectory = "/Content"; //Anstatt Page-Verzeichnis, liegen die RazorPages im Verzeichnis Content 
                     options.Conventions.AddPageRoute("/index", "{*url}");
-                    options.Conventions.AddPageRoute("/Modul004/BlogOverviewSample2", "Search/{year}/{month}/{day}/{title}");
-                    
+                    options.Conventions.AddPageRoute("/Modul004/BlogOverviewSample2", "Search/{year}/{month}/{day}/{title}"); //Friendly Routes
                 });
 
             //services.AddRazorPages().WithRazorPagesRoot("/Content"); //Weitere Variante -> //Anstatt Page-Verzeichnis, liegen die RazorPages im Verzeichnis Content 
@@ -49,7 +48,7 @@ namespace RazorPagesBasics
             services.AddSession(options =>
             {
                 //https://docs.microsoft.com/de-de/aspnet/core/fundamentals/app-state?view=aspnetcore-5.0
-                options.IdleTimeout = TimeSpan.FromSeconds(10); //TimeOut
+                options.IdleTimeout = TimeSpan.FromSeconds(60); //TimeOut
                 //options.Cookie.HttpOnly = true;
                 //options.Cookie.IsEssential = true;
             });
@@ -78,7 +77,7 @@ namespace RazorPagesBasics
             
             //gobaler Speicher - hier hinterlegen wir unseren Datenpfad zum Verzeichnis Images
             AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
-
+            
 
 
             app.UseRouting();

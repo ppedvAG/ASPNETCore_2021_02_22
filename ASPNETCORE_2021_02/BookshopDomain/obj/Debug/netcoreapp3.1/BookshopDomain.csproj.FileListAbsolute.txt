@@ -1,0 +1,9 @@
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\bin\Debug\netcoreapp3.1\BookshopDomain.deps.json
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\bin\Debug\netcoreapp3.1\BookshopDomain.dll
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\bin\Debug\netcoreapp3.1\BookshopDomain.pdb
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\obj\Debug\netcoreapp3.1\BookshopDomain.AssemblyInfoInputs.cache
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\obj\Debug\netcoreapp3.1\BookshopDomain.AssemblyInfo.cs
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\obj\Debug\netcoreapp3.1\BookshopDomain.csproj.CoreCompileInputs.cache
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\obj\Debug\netcoreapp3.1\BookshopDomain.dll
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\obj\Debug\netcoreapp3.1\BookshopDomain.pdb
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\BookshopDomain\obj\Debug\netcoreapp3.1\BookshopDomain.csprojAssemblyReference.cache

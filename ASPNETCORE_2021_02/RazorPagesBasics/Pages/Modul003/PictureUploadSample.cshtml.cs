@@ -19,8 +19,11 @@ namespace RazorPagesBasics.Pages.Modul003
         {
             FileInfo fileInfo = new FileInfo(datei.FileName);
 
+
+            //Speicherort wird zusammengebaut
             var absolutFilePath = AppDomain.CurrentDomain.GetData("BildVerzeichnis") + @"\images\" + fileInfo.Name;
 
+            //Speicherung der File
             using (var fs = new FileStream(absolutFilePath, FileMode.Create))
             {
                 datei.CopyTo(fs);

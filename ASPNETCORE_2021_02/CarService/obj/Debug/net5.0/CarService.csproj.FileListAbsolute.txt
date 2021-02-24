@@ -9,3 +9,4 @@ C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\
 C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\net5.0\CarService.dll
 C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\net5.0\ref\CarService.dll
 C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\net5.0\CarService.pdb
+C:\Aktueller Kurs\ASPNETCore_2021_02_22\ASPNETCORE_2021_02\CarService\obj\Debug\net5.0\CarService.csprojAssemblyReference.cache

@@ -11,6 +11,7 @@ namespace RazorPagesBasics.Pages.Modul004
     {
         public void OnGet(int year, int month, int day, string title)
         {
+
         }
     }
 }

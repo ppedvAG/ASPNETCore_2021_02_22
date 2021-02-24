@@ -23,7 +23,11 @@ namespace RazorPagesBasics.Pages.Modul005
             {
                 Expires = DateTime.Now.AddDays(30)
             };
-            Response.Cookies.Append("MyCookie", "value1", cookieOptions);
+
+            //Max Size eines Cookies 4096 bytes
+            Response.Cookies.Append("MyCookie", "value1abcgvhgcg", cookieOptions);
+
+           
         }
 
 
